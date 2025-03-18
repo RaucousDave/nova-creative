@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noir Creative</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- Font Awesome CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <body>
+    <header
+      class="fixed top-0 left-0 w-full bg-[#121212] text-white flex justify-between items-center px-5 py-4 z-50"
+    >
+      <!-- Logo -->
+      <div class="logo font-bold text-lg">NOIR CREATIVE</div>
+
+      <!-- Hamburger Icon -->
+      <button id="menu-toggle" class="text-white text-2xl">☰</button>
+
+      <!-- Navigation Menu -->
+      <nav
+        id="nav-menu"
+        class="fixed top-0 right-0 h-full w-[250px] bg-[#1A1A1A] text-white flex flex-col items-center gap-6 pt-16 transition-transform translate-x-full duration-500 shadow-lg"
+      >
+        <button id="close-menu" class="absolute top-4 right-5 text-2xl">
+          ✖
+        </button>
+        <ul class="flex flex-col gap-4 text-sm w-full text-center">
+          <li>
+            <a href="#home" class="block py-2 hover:text-[#0077FF]">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="block py-2 hover:text-[#0077FF]">About</a>
+          </li>
+          <li>
+            <a href="#services" class="block py-2 hover:text-[#0077FF]"
+              >Services</a
+            >
+          </li>
+
+          <li>
+            <a href="#testimonials" class="block py-2 hover:text-[#0077FF]"
+              >Testimonials</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="block py-2 hover:text-[#0077FF]"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section
+      id="hero"
+      class="flex flex-col gap-[10px] justify-center bg-[#F8F9FA] h-[100vh] items-center"
+    >
+      <h1 class="text-4xl font-bold text-[#121212] text-white text-center">
+        We Make Brands Unforgettable.
+      </h1>
+      <p class="text-[#FFFFFF] text-center">
+        Creative strategy, compelling storytelling, and innovative marketing—no
+        fluff, just result
+      </p>
+      <div class="flex gap-[15px]">
+        <button
+          class="px-[15px] py-[10px] bg-[#0077FF] text-[#FFFFFF] hover:bg-[#005FCC] transition-all duration-500"
+        >
+          Lets's talk
+        </button>
+        <button
+          class="px-[15px] py-[10px] bg-transparent transition-all duration 500 text-white border-white border-solid"
+        >
+          See our work
+        </button>
+      </div>
+    </section>
+    <section id="about" class="bg-[#000000] text-[#FFFFFF] py-20 px-6 md:px-16">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+        <!-- Left Side: About Content -->
+        <div class="space-y-6">
+          <h2 class="text-4xl font-bold text-[#0077FF] uppercase">
+            Who We Are
+          </h2>
+          <p class="text-lg text-[#E0E0E0] leading-relaxed">
+            We are a cutting-edge advertising agency dedicated to transforming
+            brands with strategic creativity and powerful marketing. Our goal?
+            To craft **impactful, memorable** campaigns that resonate with your
+            audience and drive results.
+          </p>
+          <p class="text-lg text-[#B0B0B0]">
+            With a passion for innovation, we leverage **digital trends,
+            storytelling, and bold strategies** to create brands that stand out.
+          </p>
+          <button
+            class="px-6 py-3 bg-[#0077FF] text-[#FFFFFF] rounded-lg hover:bg-[#005FCC] transition-all duration-300"
+          >
+            Learn More
+          </button>
+        </div>
+
+        <!-- Right Side: Animated Stats -->
+        <div class="grid grid-cols-2 gap-6 text-center">
+          <div class="p-6 border border-[#0077FF] rounded-lg">
+            <h3 class="text-3xl font-bold text-[#0077FF]">10+</h3>
+            <p class="text-sm text-[#E0E0E0]">Years of Experience</p>
+          </div>
+          <div class="p-6 border border-[#0077FF] rounded-lg">
+            <h3 class="text-3xl font-bold text-[#0077FF]">50+</h3>
+            <p class="text-sm text-[#E0E0E0]">Successful Campaigns</p>
+          </div>
+          <div class="p-6 border border-[#0077FF] rounded-lg">
+            <h3 class="text-3xl font-bold text-[#0077FF]">100%</h3>
+            <p class="text-sm text-[#E0E0E0]">Client Satisfaction</p>
+          </div>
+          <div class="p-6 border border-[#0077FF] rounded-lg">
+            <h3 class="text-3xl font-bold text-[#0077FF]">24/7</h3>
+            <p class="text-sm text-[#E0E0E0]">Support & Strategy</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-black text-white" id="services">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold text-[#0077FF] mb-4">
+          Our Services – Built for Impact
+        </h2>
+        <p class="text-gray-400 mb-10">
+          We create powerful strategies that connect brands with people.
+        </p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Brand Strategy -->
+          <div class="p-6 border border-[#0077FF] rounded-lg">
+            <i class="fas fa-lightbulb text-[#0077FF] text-4xl mb-4"></i>
+            <h3 class="text-xl font-semibold mb-2">Brand Strategy</h3>
+            <p class="text-gray-400 text-sm">
+              We craft powerful brand strategies that define your identity and
+              leave a lasting impression.
+            </p>
+          </div>
+
+          <!-- Creative Design -->
+          <div class="p-6 border border-[#0077FF] rounded-lg">
+            <i class="fas fa-paint-brush text-[#0077FF] text-4xl mb-4"></i>
+            <h3 class="text-xl font-semibold mb-2">Creative Design</h3>
+            <p class="text-gray-400 text-sm">
+              Minimal, sleek, and bold—our designs don’t just look good, they
+              perform.
+            </p>
+          </div>
+
+          <!-- Digital Marketing -->
+          <div class="p-6 border border-[#0077FF] rounded-lg">
+            <i class="fas fa-chart-line text-[#0077FF] text-4xl mb-4"></i>
+            <h3 class="text-xl font-semibold mb-2">Digital Marketing</h3>
+            <p class="text-gray-400 text-sm">
+              Data-driven campaigns that boost engagement, sales, and brand
+              reach.
+            </p>
+          </div>
+
+          <!-- Social Media Management -->
+          <div class="p-6 border border-[#0077FF] rounded-lg">
+            <i class="fas fa-hashtag text-[#0077FF] text-4xl mb-4"></i>
+            <h3 class="text-xl font-semibold mb-2">Social Media Management</h3>
+            <p class="text-gray-400 text-sm">
+              We create engaging content that grows your audience and keeps them
+              hooked.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-10">
+          <a
+            href="#"
+            class="px-6 py-3 bg-[#0077FF] text-white font-semibold rounded-lg transition hover:bg-[#005fcc]"
+          >
+            See Our Work
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[#0A0A0A] text-white py-16 px-6" id="why-choose-us">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-[#0077FF] mb-6">Why Choose Us?</h2>
+        <p class="text-gray-300 max-w-2xl mx-auto mb-12">
+          We bring a mix of <span class="text-[#0077FF]">creativity</span>,
+          <span class="text-[#0077FF]">strategy</span>, and
+          <span class="text-[#0077FF]">data-driven decisions</span> to help your
+          brand dominate the market.
+        </p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Data-Driven Strategies -->
+          <div class="p-6 bg-[#121212] rounded-xl shadow-md">
+            <i class="fas fa-chart-line text-[#0077FF] text-4xl mb-4"></i>
+            <h3 class="text-xl font-semibold mb-2">Data-Driven Strategies</h3>
+            <p class="text-gray-400">
+              We use analytics and insights to craft
+              <span class="text-[#0077FF]">high-impact</span> campaigns that
+              drive <span class="text-[#0077FF]">real results</span>.
+            </p>
+          </div>
+
+          <!-- Creative Excellence -->
+          <div class="p-6 bg-[#121212] rounded-xl shadow-md">
+            <i class="fas fa-paint-brush text-[#0077FF] text-4xl mb-4"></i>
+            <h3 class="text-xl font-semibold mb-2">Creative Excellence</h3>
+            <p class="text-gray-400">
+              Our team crafts visually stunning and engaging campaigns that
+              <span class="text-[#0077FF]">capture attention & convert</span>.
+            </p>
+          </div>
+
+          <!-- Proven Results -->
+          <div class="p-6 bg-[#121212] rounded-xl shadow-md">
+            <i class="fas fa-trophy text-[#0077FF] text-4xl mb-4"></i>
+            <h3 class="text-xl font-semibold mb-2">Proven Results</h3>
+            <p class="text-gray-400">
+              We've helped
+              <span class="text-[#0077FF]">businesses grow & scale</span>,
+              delivering <span class="text-[#0077FF]">measurable</span> success
+              across industries.
+            </p>
+          </div>
+
+          <!-- Fast & Reliable -->
+          <div class="p-6 bg-[#121212] rounded-xl shadow-md">
+            <i class="fas fa-clock text-[#0077FF] text-4xl mb-4"></i>
+            <h3 class="text-xl font-semibold mb-2">Fast & Reliable</h3>
+            <p class="text-gray-400">
+              We work efficiently to meet deadlines and deliver high-quality
+              projects <span class="text-[#0077FF]"> on time, every time</span>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[#121212] text-white py-16 px-6" id="testimonials">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-[#0077FF] mb-6">
+          What Our Clients Say
+        </h2>
+        <p class="text-gray-300 max-w-2xl mx-auto mb-12">
+          We’ve helped brands scale and dominate their industries. Here’s what
+          our clients have to say.
+        </p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="p-6 bg-[#1A1A1A] rounded-xl shadow-md">
+            <i class="fas fa-quote-left text-[#0077FF] text-3xl mb-4"></i>
+            <p class="text-gray-300 italic mb-4">
+              "Their expertise and creativity
+              <span class="text-[#0077FF]">transformed our brand</span>. We've
+              seen massive engagement!"
+            </p>
+            <h4 class="font-semibold">John Doe</h4>
+            <p class="text-sm text-gray-400">CEO, BrightMarketing</p>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="p-6 bg-[#1A1A1A] rounded-xl shadow-md">
+            <i class="fas fa-quote-left text-[#0077FF] text-3xl mb-4"></i>
+            <p class="text-gray-300 italic mb-4">
+              "From <span class="text-[#0077FF]">strategy to execution</span>,
+              their team nailed it! Our <span class="text-[#0077FF]"></span> in
+              three months."
+            </p>
+            <h4 class="font-semibold">Sarah Johnson</h4>
+            <p class="text-sm text-gray-400">Founder, EcomBoost</p>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="p-6 bg-[#1A1A1A] rounded-xl shadow-md">
+            <i class="fas fa-quote-left text-[#0077FF] text-3xl mb-4"></i>
+            <p class="text-gray-300 italic mb-4">
+              "Their
+              <span class="text-[#0077FF]">data-driven approach</span> gave us
+              <span class="text-[#0077FF]">insights & results</span> we never
+              thought possible."
+            </p>
+            <h4 class="font-semibold">Michael Smith</h4>
+            <p class="text-sm text-gray-400">CMO, NextGen Startups</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[#0077FF] text-white py-16 px-6" id="contact">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4">Let's Work Together</h2>
+        <p class="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
+          Whether you're looking to elevate your brand, increase conversions, or
+          create a unique digital experience—**we've got you covered**.
+        </p>
+
+        <a
+          href="#contact-form"
+          class="inline-block px-6 py-3 bg-black text-white text-lg font-semibold rounded-full shadow-md hover:bg-gray-900 transition-all duration-300"
+        >
+          Get In Touch
+        </a>
+
+        <!-- Optional contact details -->
+        <div
+          class="mt-10 flex flex-col sm:flex-row justify-center gap-8 text-white/80 text-lg"
+        >
+          <p><i class="fas fa-envelope text-white"></i> hello@youragency.com</p>
+          <p><i class="fas fa-phone text-white"></i> +234 810 123 4567</p>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-black text-white py-10 px-6">
+      <div
+        class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center"
+      >
+        <!-- Left: Logo & Short Description -->
+        <div class="text-center sm:text-left">
+          <h2 class="text-xl font-bold">NOIR CREATIVE</h2>
+          <p class="text-white/60 text-sm mt-2 max-w-xs">
+            Elevating brands with innovative strategies and stunning designs.
+          </p>
+        </div>
+
+        <!-- Center: Navigation Links -->
+        <nav class="flex gap-6 mt-6 sm:mt-0">
+          <a href="#home" class="text-white/60 hover:text-white transition"
+            >Home</a
+          >
+          <a href="#about" class="text-white/60 hover:text-white transition"
+            >About</a
+          >
+          <a href="#services" class="text-white/60 hover:text-white transition"
+            >Services</a
+          >
+          <a href="#contact" class="text-white/60 hover:text-white transition"
+            >Contact</a
+          >
+        </nav>
+
+        <!-- Right: Social Icons -->
+        <div class="flex gap-4 mt-6 sm:mt-0">
+          <a href="#" class="text-white/60 hover:text-white transition text-xl"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="#" class="text-white/60 hover:text-white transition text-xl"
+            ><i class="fab fa-x-twitter"></i
+          ></a>
+          <a href="#" class="text-white/60 hover:text-white transition text-xl"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="#" class="text-white/60 hover:text-white transition text-xl"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="text-center text-white/50 text-sm mt-8">
+        &copy; 2025 YourAgency. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
