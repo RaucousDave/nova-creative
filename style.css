@@ -9,4 +9,10 @@ body {
 }
 #hero {
   background: url(assets/wave-haikei.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.secondary {
+  border: 1px solid #0077ff;
 }
